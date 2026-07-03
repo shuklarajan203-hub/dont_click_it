@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Don't Click It</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<audio id="sound1" src="sound1.mp3"></audio>
+<audio id="sound2" src="sound2.mp3"></audio>
+<audio id="sound3" src="sound3.mp3"></audio>
+<audio id="sound4" src="sound4.mp3"></audio>
+<audio id="sound5" src="sound5.mp3"></audio>
+<body>
+
+<div class="container">
+
+<h1>🚫 DON'T CLICK IT</h1>
+
+<p class="tagline">I Dare You...</p>
+
+<img id="character" src="face1.png" alt="Character">
+
+<p id="message">😏 Go ahead... Click me!</p>
+
+<button id="clickBtn">DON'T CLICK</button>
+
+<h2>Clicks: <span id="count">0</span></h2>
+
+<div class="progress">
+<div id="bar"></div>
+</div>
+<div id="winScreen" class="hidden">
+
+<h1>🎉 YOU DID IT!</h1>
+
+<p>You reached 100 Clicks!</p>
+
+<button onclick="location.reload()">
+🔄 Play Again
+</button>
+
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
